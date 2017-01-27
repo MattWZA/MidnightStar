@@ -1,0 +1,35 @@
+@screen-sm: 767px;
+
+html{
+	overflow-y: scroll;	
+}
+
+body{
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+/* NAV */
+.navbar-header
+{
+}
+
+
+/* Footer */
+footer {
+	& > .navbar {
+		margin-bottom: 0;
+	}
+}
+
+/* Phone size screen */
+@media screen and (max-width: @screen-sm) {
+	.navbar-fixed-bottom{
+		position: relative;		
+		z-index: auto;
+	}
+    body {
+        margin-bottom: 0;
+    }
+}
+
